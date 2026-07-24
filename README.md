@@ -1,17 +1,42 @@
-# ai_chatbot
+# AI Chatbot App
 
-A new Flutter project.
+A simple AI chatbot built with Flutter and Gemini API. Users can send messages and receive AI-generated responses through a clean chat interface.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Chat with Gemini AI
+- Display chat history during session
+- Loading indicator while waiting for responses
+- Error handling
+- Auto scroll to latest message
+- Secure API key handling using `.env`
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- Riverpod
+- Gemini API
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup Instructions
+
+1. Clone the repository.
+
+2. Install dependencies:
+
+```bash
+flutter pub get
+Create a .env file in the project root directory.
+Add your Gemini API key in the .env file:
+GEMINI_API_KEY=your_gemini_api_key_here
+Get your Gemini API key from Google AI Studio and replace your_gemini_api_key_here with your actual key.
+Run the application:
+flutter run
+Folder Structure
+lib/
+├── models
+├── providers
+├── screens
+├── services
+├── widgets
+└── main.dart
